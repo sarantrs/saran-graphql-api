@@ -1,0 +1,49 @@
+# Post Mutations
+
+# Create a new post
+mutation CreatePost($input: CreatePostInput!) {
+  createPost(input: $input) {
+    id
+    title
+    content
+    published
+    createdAt
+    author {
+      id
+      name
+    }
+  }
+}
+
+# Update an existing post
+mutation UpdatePost($id: ID!, $input: UpdatePostInput!) {
+  updatePost(id: $id, input: $input) {
+    id
+    title
+    content
+    published
+  }
+}
+
+# Delete a post
+mutation DeletePost($id: ID!) {
+  deletePost(id: $id)
+}
+
+# Publish a post
+mutation PublishPost($id: ID!) {
+  publishPost(id: $id) {
+    id
+    title
+    published
+  }
+}
+
+# Unpublish a post
+mutation UnpublishPost($id: ID!) {
+  unpublishPost(id: $id) {
+    id
+    title
+    published
+  }
+}

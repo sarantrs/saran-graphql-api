@@ -1,0 +1,47 @@
+# Post Queries
+
+# Get all posts
+query GetPosts {
+  posts {
+    id
+    title
+    content
+    published
+    createdAt
+    author {
+      id
+      name
+      email
+    }
+  }
+}
+
+# Get single post by ID
+query GetPost($id: ID!) {
+  post(id: $id) {
+    id
+    title
+    content
+    published
+    createdAt
+    author {
+      id
+      name
+      email
+    }
+  }
+}
+
+# Get only published posts
+query GetPublishedPosts {
+  publishedPosts {
+    id
+    title
+    content
+    createdAt
+    author {
+      id
+      name
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# User Mutations
+
+# Create a new user
+mutation CreateUser($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+    name
+    email
+    createdAt
+  }
+}
+
+# Update an existing user
+mutation UpdateUser($id: ID!, $input: UpdateUserInput!) {
+  updateUser(id: $id, input: $input) {
+    id
+    name
+    email
+  }
+}
+
+# Delete a user
+mutation DeleteUser($id: ID!) {
+  deleteUser(id: $id)
+}

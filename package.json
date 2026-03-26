@@ -1,0 +1,49 @@
+{
+  "name": "saran-graphql-api",
+  "version": "1.0.0",
+  "description": "GraphQL API with Apollo Server deployed to Vercel",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "type-check": "tsc --noEmit",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "test:watch": "NODE_OPTIONS='--experimental-vm-modules' jest --watch",
+    "test:coverage": "NODE_OPTIONS='--experimental-vm-modules' jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarantrs/saran-graphql-api.git"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "vercel",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sarantrs/saran-graphql-api/issues"
+  },
+  "homepage": "https://github.com/sarantrs/saran-graphql-api#readme",
+  "dependencies": {
+    "@apollo/server": "^5.5.0",
+    "@as-integrations/aws-lambda": "^4.0.1",
+    "@graphql-tools/merge": "^9.1.7",
+    "@graphql-tools/schema": "^10.0.31",
+    "graphql": "^16.13.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.5.0",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}

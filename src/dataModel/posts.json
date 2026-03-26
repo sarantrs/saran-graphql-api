@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2",
+    "title": "Apollo Server Best Practices",
+    "content": "Learn how to structure your Apollo Server application for maintainability and scalability.",
+    "authorId": "1",
+    "published": true,
+    "createdAt": "2024-02-15T08:30:00Z"
+  },
+  {
+    "id": "3",
+    "title": "TypeScript with GraphQL",
+    "content": "Using TypeScript with GraphQL provides excellent type safety and developer experience.",
+    "authorId": "2",
+    "published": true,
+    "createdAt": "2024-03-01T16:20:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Draft: Deploying to Vercel",
+    "content": "This is a draft post about deploying GraphQL APIs to Vercel.",
+    "authorId": "3",
+    "published": false,
+    "createdAt": "2024-03-20T11:00:00Z"
+  }
+]

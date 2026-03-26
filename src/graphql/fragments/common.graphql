@@ -1,0 +1,34 @@
+# GraphQL Fragments for reusable field selections
+
+# User fields fragment
+fragment UserFields on User {
+  id
+  name
+  email
+  createdAt
+}
+
+# Post fields fragment
+fragment PostFields on Post {
+  id
+  title
+  content
+  published
+  createdAt
+}
+
+# User with posts fragment
+fragment UserWithPosts on User {
+  ...UserFields
+  posts {
+    ...PostFields
+  }
+}
+
+# Post with author fragment
+fragment PostWithAuthor on Post {
+  ...PostFields
+  author {
+    ...UserFields
+  }
+}
